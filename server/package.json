@@ -1,0 +1,31 @@
+{
+  "name": "docs-study-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --disable-warning=ExperimentalWarning src/index.ts",
+    "dev:watch": "tsx watch --clear-screen=false --disable-warning=ExperimentalWarning src/index.ts",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit",
+    "reset": "tsx --disable-warning=ExperimentalWarning src/reset.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@apollo/server": "^5.5.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "cheerio": "^1.2.0",
+    "graphql": "^16.11.0",
+    "jsdom": "^30.1.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "vitest": "^5.0.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Secrets and local settings. The API key lives in .env, so it must never be committed.
+.env
+.env.*
+!.env.example
+
+# Your study data. The database holds your progress.
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Notes, specs and plans
+docs/
+
+# Build output and caches
+web/dist/
+dist/
+build/
+coverage/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# Scratch space for the bug checker's test runs
+server/.sandbox/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Editor and system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Working files from AI tools
+.superpowers/
+.claude/

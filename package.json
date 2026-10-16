@@ -1,0 +1,18 @@
+{
+  "name": "docs-study",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Turns documentation into a concept map, quizzes, and bug hunts. Runs only on your computer.",
+  "workspaces": ["server", "web"],
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c green,cyan \"npm run dev -w server\" \"npm run dev -w web\"",
+    "test": "npm test -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "build": "npm run build -w web",
+    "reset": "npm run reset -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
